@@ -10,6 +10,10 @@ header {
     text-align: center;
 }
 
+nav {
+    text-align: center;
+}
+
 nav ul {
     display: flex;
     list-style-type: none;
