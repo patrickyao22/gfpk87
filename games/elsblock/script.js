@@ -10,7 +10,7 @@ var canvas = document.getElementById("tetris");
  maxY = 18,
  score = 0,
  level = 1;
- var dc = 0;
+ var dcccc= 0;
  var ub = 0;
  var gameMap = new Array(); //游戏地图，二维数组
  var gameTimer;
@@ -125,8 +125,8 @@ var canvas = document.getElementById("tetris");
   
   if (flag) {
   clearRowList.push(i); //记录消除行号的索引
-  dc++;
-  document.getElementById("destory_line").innerHTML = dc/18;
+  dcccc++;
+  document.getElementById("destory_line").innerHTML = dcccc;
   }
   
  }
