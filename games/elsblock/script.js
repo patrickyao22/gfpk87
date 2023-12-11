@@ -126,7 +126,7 @@ var canvas = document.getElementById("tetris");
   if (flag) {
   clearRowList.push(i); //记录消除行号的索引
   dc++;
-  document.getElementById("destory_line").innerHTML = dc;
+  document.getElementById("destory_line").innerHTML = dc/18;
   }
   
  }
