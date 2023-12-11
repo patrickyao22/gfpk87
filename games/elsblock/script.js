@@ -122,10 +122,11 @@ var canvas = document.getElementById("tetris");
    break;
   }
   }
-  if (flag) {
-  clearRowList.push(i); //记录消除行号的索引
   dc++;
   document.getElementById("destory_line").innerHTML = dc;
+  if (flag) {
+  clearRowList.push(i); //记录消除行号的索引
+  
   }
  }
  var clearRows = clearRowList.length;
