@@ -1,8 +1,6 @@
 var canvas = document.getElementById("tetris");
  var context = canvas.getContext("2d");
- 
  var padding = 6,
- 
  size = 32,
  minX = 0,
  maxX = 10,
@@ -10,8 +8,6 @@ var canvas = document.getElementById("tetris");
  maxY = 18,
  score = 0,
  level = 1;
- var dcccc= 0;
- var ub = 0;
  var gameMap = new Array(); //游戏地图，二维数组
  var gameTimer;
  initGameMap();
@@ -122,12 +118,9 @@ var canvas = document.getElementById("tetris");
    break;
   }
   }
-  
   if (flag) {
-  clearRowList.push(i); //记录消除行号的;
-   document.getElementById("dl").innerHTML=clearRowList.length/18;
+  clearRowList.push(i); //记录消除行号的索引
   }
-  
  }
  var clearRows = clearRowList.length;
  //所谓的消行就是将待消除行的索引，下方所有的格子上移动
@@ -149,7 +142,6 @@ var canvas = document.getElementById("tetris");
   }
   }
  }
-  
  }
  /**
  
@@ -271,8 +263,6 @@ var canvas = document.getElementById("tetris");
  
  */
  function nextBlock() {
- ub++;
- document.getElementById("used_blocks").innerHTML = ub;
  blockIndex = getRandomIndex();
  block = getPointByCode(blockIndex);
  context.fillStyle = getBlockColorByIndex(blockIndex);
