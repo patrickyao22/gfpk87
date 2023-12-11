@@ -149,7 +149,7 @@ var canvas = document.getElementById("tetris");
   }
  }
   dcccc++;
-  document.getElementById("destory_line").innerHTML = dcccc
+  document.getElementById("destory_line").innerHTML = dcccc;
  }
  /**
  
