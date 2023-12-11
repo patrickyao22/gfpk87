@@ -125,6 +125,10 @@ var canvas = document.getElementById("tetris");
   
   if (flag) {
   clearRowList.push(i); //记录消除行号的;
+   document.getElementById("destory_line").innerHTML=clearRowList.length;
+
+
+   
   }
   
  }
@@ -148,8 +152,7 @@ var canvas = document.getElementById("tetris");
   }
   }
  }
-  dcccc++;
-  document.getElementById("destory_line").innerHTML = dcccc;
+  
  }
  /**
  
