@@ -125,10 +125,10 @@ var canvas = document.getElementById("tetris");
   
   if (flag) {
   clearRowList.push(i); //记录消除行号的索引
-  
-  }
   dc++;
   document.getElementById("destory_line").innerHTML = dc;
+  }
+  
  }
  var clearRows = clearRowList.length;
  //所谓的消行就是将待消除行的索引，下方所有的格子上移动
